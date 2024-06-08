@@ -1,0 +1,73 @@
+# Created by Ultra Librarian 8.3.353 Copyright © 1999-2024
+# Frank Frank, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "B12AP_NKK")
+Pad (Name "1") (Location 0, 0) (HoleSize 32) (Surface False) (Rotation 0) (ExpandMask 0) (ExpandPaste -26)
+PadShape (Size 52, 52) (Shape Rectangular) (Layer Top)
+PadShape (Size 52, 52) (Shape Rectangular) (Layer Bottom)
+EndPad
+Pad (Name "2") (Location 0, -100) (HoleSize 32) (Surface False) (Rotation 0) (ExpandMask 0) (ExpandPaste -26)
+PadShape (Size 52, 52) (Shape Rounded) (Layer Top)
+PadShape (Size 52, 52) (Shape Rounded) (Layer Bottom)
+EndPad
+Pad (Name "3") (Location 0, -200) (HoleSize 32) (Surface False) (Rotation 0) (ExpandMask 0) (ExpandPaste -26)
+PadShape (Size 52, 52) (Shape Rounded) (Layer Top)
+PadShape (Size 52, 52) (Shape Rounded) (Layer Bottom)
+EndPad
+Line (Width 6) (Start -104.629921, -283) (End 183.370079, -283) (Layer Mechanical15) 
+Line (Width 6) (Start 183.370079, -283) (End 183.370079, 83) (Layer Mechanical15) 
+Line (Width 6) (Start 183.370079, 83) (End -104.629921, 83) (Layer Mechanical15) 
+Line (Width 6) (Start -104.629921, 83) (End -104.629921, -283) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-104.629921, -283)
+Point (-104.629921, 83)
+Point (183.370079, 83)
+Point (183.370079, -283)
+EndPolygon
+Line (Width 1) (Start 39.370079, -100) (End 39.370079, -100) (Layer Mechanical13) 
+Line (Width 1) (Start 39.370079, -100) (End 39.370079, -100) (Layer Mechanical13) 
+Line (Width 1) (Start 39.370079, -100) (End 39.370079, -100) (Layer Mechanical13) 
+Line (Width 1) (Start 39.370079, -100) (End 39.370079, -100) (Layer Mechanical13) 
+Line (Width 1) (Start -94.629921, -273) (End 173.370079, -273) (Layer Mechanical13) 
+Line (Width 1) (Start 173.370079, -273) (End 173.370079, 73) (Layer Mechanical13) 
+Line (Width 1) (Start 173.370079, 73) (End -94.629921, 73) (Layer Mechanical13) 
+Line (Width 1) (Start -94.629921, 73) (End -94.629921, -273) (Layer Mechanical13) 
+Polygon (PointCount 4) (Layer Mechanical13) 
+Point (39.370079, -100)
+Point (39.370079, -100)
+Point (39.370079, -100)
+Point (39.370079, -100)
+EndPolygon
+Text (Location -92.129921, -25) (Height 50) (Width 3) (Rotation 0) (Layer Mechanical13) (Value "*")
+Line (Width 6) (Start -99.629921, -278) (End 178.370079, -278) (Layer TopOverlay) 
+Line (Width 6) (Start 178.370079, -278) (End 178.370079, 78) (Layer TopOverlay) 
+Line (Width 6) (Start 178.370079, 78) (End -99.629921, 78) (Layer TopOverlay) 
+Line (Width 6) (Start -99.629921, 78) (End -99.629921, -278) (Layer TopOverlay) 
+Text (Location -127.129921, -25) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "*")
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "B12AP") (PartCount 1) (DesPrefix "SW?")
+Pin (Location 300, 0) (Rotation 180) (PinType Passive) (Length 300) (Width 0) (Designator Visible "1") (Name Hidden "1") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Pin (Location 700, -100) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "2") (Name Hidden "2") (PinSwap 0) (PartSwap 0) (PinSeq 2) (Part 1)
+Pin (Location 700, 0) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "3") (Name Hidden "3") (PinSwap 0) (PartSwap 0) (PinSeq 3) (Part 1)
+Line (Width 5) (Start 300, 0) (End 450, 0) (Part 1)
+Line (Width 5) (Start 700, 0) (End 550, 0) (Part 1)
+Line (Width 5) (Start 700, -100) (End 500, -100) (Part 1)
+Line (Width 5) (Start 500, -80) (End 500, -100) (Part 1)
+Line (Width 5) (Start 500, -60) (End 530, 20) (Part 1)
+Rectangle (Width 5) (Start 300, -200) (End 700, 100) (Part 1)
+Arc (Width 5) (Radius 10) (Location 500, -70) (StartAngle 270) (EndAngle 270) (Part 1)
+Arc (Width 5) (Radius 10) (Location 460, 0) (StartAngle 0) (EndAngle 0) (Part 1)
+Arc (Width 5) (Radius 10) (Location 540, 0) (StartAngle 0) (EndAngle 0) (Part 1)
+Parameter (Name "Type") (Location 500, 200) (Height 82) (Rotation 0) (Justification Center) (Value "Toggle Switches") (Part 1)
+Parameter (Name "Mfr_Name") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "NKK Switches") (Part 1)
+Parameter (Name "RefDes") (Location 500, 300) (Height 82) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Description (Value "No Description Available") (Part 1)
+Footprint (Name "B12AP_NKK")
+EndComponent
+EndComponents
